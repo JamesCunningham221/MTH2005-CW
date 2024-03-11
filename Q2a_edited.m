@@ -60,7 +60,7 @@ for n = 1:nsteps
     z(n+1) = z(n) + (dt * w);
     
     % Update supersaturation
-    s(n+1) = s(n) + dt * ((A1 * z(n)) - (A2 * ql));
+    s(n+1) = s(n) + dt * ((A1 * w) - (A2 * ql));
 
     % Calculate supersaturation percentage
     s_percentage(n+1) = (s(n+1) - 1) * 100;
