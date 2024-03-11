@@ -17,7 +17,7 @@ T = 282;                          % Constant temperature in Kelvin
 
 % Time parameters
 dt = 0.1;            % Time step (s)
-t_end = 1.75e4;     % Total simulation time (s)
+t_end = 1.75e5;     % Total simulation time (s)
 nsteps = t_end / dt; % Number of time steps
 
 % Arrays to store results
@@ -27,9 +27,9 @@ r = zeros(1, nsteps+1);            % Droplet radius
 s_percentage = zeros(1, nsteps+1); % Supersaturation percentage
 
 % Initial conditions
-r(1) = 1e-3;    % Initial droplet radius (m)
+r(1) = 0.1e-3;    % Initial droplet radius (m)
 s(1) = 0;     % Initial supersaturation ratio
-z(1) = 1000;    % Initial altitude (m)
+z(1) = 0;    % Initial altitude (m)
 P = 100000;     % Constant pressure (Pa)
 w = 0.3;          % Constant vertical velocity (m/s)
 
