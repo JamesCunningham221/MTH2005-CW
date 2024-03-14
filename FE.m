@@ -23,7 +23,7 @@ NDropletDensity = 0;
 % Constants for simulation
 s = 0.003;                      % Supersaturation (0.30%)
 T = 282;                        % Temperature (K)
-dt =60;                        % Time step (seconds)
+dt =1;                        % Time step (seconds)
 num_steps = 45*60;              % Total number of steps (45 minutes * 60 seconds)
 
 % Initialize arrays
