@@ -19,6 +19,7 @@ P = 100000;             % Constant pressure in pascals N = 1e+8; % droplet numbe
 es = svp(T);            % Saturation vapour pressure 
 cloud_base = 400;       % Cloud depth in metres
 w = 0.3;                % Vertical velocity
+c = 1e+8;                % CCN conc. at s
 
 % Time step (s)
 dt = 0.1; 
@@ -47,7 +48,7 @@ A3 = ((((Lv^2) * Rho_w) / (k * Rv * T^2)) + ((Rho_w * Rv * T) / (Kv * svp(T))))^
 % Forward Euler time stepping
 for i = 1:n_steps
 
-    N = 1e+8;   % Droplet number density
+    N = c*(s(i)*100)^k;   % Droplet number density
 
     % Work out derivatives of r and q_w with respect to t
     dr_dt = A3 * s(i)/r(i);
