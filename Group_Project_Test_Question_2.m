@@ -81,7 +81,7 @@ title('Droplet Radius Evolution');
 
 % Plot Supersaturation against altitude
 subplot(1, 2, 1);
-plot(s, z);
+plot(s_percentage, z);
 xlabel('Supersaturation (%)');
 ylabel('Altitude above cloud base (m)');
 title('Supersaturation Percentage Evolution');
