@@ -12,9 +12,9 @@ Ra = 287.0;                       % Gas constant of dry air (J/kg/K)
 Rv = 462.0;                       % Gas constant of water vapour (J/kg/K)
 k = 0.024;                        % Thermal conductivity of air (J/m/s/K)
 Kv = 2.21e-5;                     % Diffusivity of water vapour (m^2/s)
-T = 282;                          % Constant temperature in Kelvin
-P = 100000;                       % Constant pressure (Pa)
+
 w = 0.3;                          % Constant vertical velocity (m/s)
+N = 100e6 ;
 
 % Constants
 Q1 = (1/T)*(((Eps*Lv*g)/(Ra*c_pa*T))-(g/Ra));
@@ -28,7 +28,7 @@ A1 = (g / (Ra * T)) * (((Lv * Ra) / (c_pa * Rv * T)) - 1);
 A2 = ((Lv^2) / (c_pa * Rv * (T^2))) + (1 / qv);           
 A3 = ((((Lv^2) * Rho_w) / (k * Rv * T^2)) + ((Rho_w * Rv * T) / (Kv * svp(T))))^-1;
 
-N = c_pa*(s*100)^k;     % Droplet number density
+%N = c_pa*(s*100)^k;     % Droplet number density
 ql = ((4 * Pi * Rho_w * N) / Rho_a) * (r^2) * (A3 * (s / r));  % Calculate liquid water mixing ratio
 
 R = A3* (s/r);
