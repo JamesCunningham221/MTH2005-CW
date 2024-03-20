@@ -12,6 +12,8 @@ Ra = 287.0;                       % Gas constant of dry air (J/kg/K)
 Rv = 462.0;                       % Gas constant of water vapour (J/kg/K)
 k = 0.024;                        % Thermal conductivity of air (J/m/s/K)
 Kv = 2.21e-5;                     % Diffusivity of water vapour (m^2/s)
+T = 282 ;
+P = 10000 ;
 
 w = 0.3;                          % Constant vertical velocity (m/s)
 N = 100e6 ;
