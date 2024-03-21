@@ -21,10 +21,10 @@ T = 282;               % Constant temperature in Kelvin
 
 % Set timestep and number of steps
 dt = 0.1;              % Timestep in seconds
-n_steps = 15*60/dt;    % Number of steps for 45 minutes
+n_steps = 45*60/dt;    % Number of steps for 45 minutes
 
 % Time array
-t = 0:dt:15*60;         % Time up to 2700 seconds (45 minutes)
+t = 0:dt:45*60;         % Time up to 2700 seconds (45 minutes)
 
 % Initialize matrix for storing radius data
 radius_matrix = zeros(length(t), length(radii_initial));
