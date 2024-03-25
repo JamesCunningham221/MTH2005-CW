@@ -14,7 +14,7 @@ k = 0.024;              %! Thermal Conductivity of Air (J m^-1 s^-1 K^-1)
 Kv = 2.21e-5;           %! Diffusivity of Water Vapour (m^2 s^-1)
 
 % Constants
-cloud_base = 400;       % Cloud depth in metres
+cloud_base = 800;       % Cloud depth in metres
 w = 0.3;                % Vertical velocity
 %c = 1e+8;                % CCN conc. at s
 
@@ -34,8 +34,8 @@ s_percent = zeros(1, n_steps+1);     % Supersaturation
 % Initial Conditions
 r(1) = 1e-6;         % Initial droplet radius (m)
 s(1) = 0.003;        % Initial supersaturation ratio
-T(1) = 282          % inital temperature
-P(1) = 10000        %Initial temperature
+T(1) = 282  ;        % inital temperature
+P(1) = 10000  ;      %Initial temperature
 
 % Forward Euler time stepping
 for n = 1:n_steps
