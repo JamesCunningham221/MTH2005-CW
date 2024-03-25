@@ -13,7 +13,7 @@ Rv = 462.0;                       % Gas constant of water vapour (J/kg/K)
 k = 0.024;                        % Thermal conductivity of air (J/m/s/K)
 Kv = 2.21e-5;                     % Diffusivity of water vapour (m^2/s)
 w = 0.3;                          % Constant vertical velocity (m/s)
-c = 1e+8;                % CCN conc. at s
+c = 1e+8;                         % CCN conc. at s
 N = 100e6;
 
 % Constants
