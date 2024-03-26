@@ -78,6 +78,6 @@ for v = 1:length(w_values)
     plot(r_values(v, :), z, 'DisplayName', sprintf('w = %.1f m/s', w_values(v)));
 end
 xlabel('Droplet Radius (m)');
-ylabel('Altitude (m)');
+ylabel('Altitude above cloud base(m)');
 title('Droplet Radius Evolution');
 legend('Location', 'best');
