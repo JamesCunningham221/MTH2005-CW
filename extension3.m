@@ -15,7 +15,7 @@ Kv = 2.21e-5;           %! Diffusivity of Water Vapour (m^2 s^-1)
 % Constants
 cloud_base = 250;       % Cloud depth in metres
 w = 0.3;                % Vertical velocity
-N = 200e8;               % Droplet concentration (m^-3)
+N = 200e8;               % Droplet concentration (m^-3), needs changing in function as well
 G = 0.85;                % Asymmetry factor
 
 % Time step (s)
