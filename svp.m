@@ -1,4 +1,4 @@
-function es = svp(T)
+function [ es ] = svp(T)
 
 %Calculation of Saturation Vapour Pressure (es) 
 %Numerous approximations available in the literature, e.g. Bolton, 1980
@@ -17,3 +17,7 @@ function es = svp(T)
    %es = exp(A - B/X(2) - C * log(X(2)));                       %! NB: pressure in hPa
 
    es = 100.0 * es;                      			%! Convert from hPa to Pa               
+
+
+end
+
